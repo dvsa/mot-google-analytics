@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<phpunit
+        bootstrap="./test/bootstrap.php"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        verbose="true"
+        stopOnFailure="false"
+        processIsolation="false"
+        backupGlobals="false"
+        columns="max"
+>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>./test/Unit</directory>
+        </testsuite>
+        <testsuite name="functional">
+            <directory>./test/Functional</directory>
+        </testsuite>
+    </testsuites>
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+    </coverage>
+</phpunit>

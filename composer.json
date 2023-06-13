@@ -1,0 +1,45 @@
+{
+    "name": "dvsa/mot-google-analytics",
+    "description": "A Laminas module for easy integration of Google Analytics and Google Tag Manager",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.0",
+        "laminas/laminas-modulemanager": "^2.8.2",
+        "laminas/laminas-i18n": "^2.9.0",
+        "laminas/laminas-log": "^2.10.0",
+        "laminas/laminas-mvc": "^3.1.1",
+        "laminas/laminas-serializer": "^2.9.0",
+        "laminas/laminas-servicemanager": "^3.10",
+        "laminas/laminas-view": "^2.10.0",
+        "laminas/laminas-dependency-plugin": "^2"
+    },
+    "require-dev": {
+        "captainhook/captainhook": "^5.16",
+        "captainhook/plugin-composer": "^5.3",
+        "friendsofphp/php-cs-fixer": "^3.1",
+        "laminas/laminas-test": "^4.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Dvsa\\Mot\\Frontend\\GoogleAnalyticsModule\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dvsa\\Mot\\Frontend\\GoogleAnalyticsModuleTest\\": "test"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-clover build/code-coverage/clover/clover.xml --coverage-html build/code-coverage/html/"
+    },
+    "config": {
+        "allow-plugins": {
+            "laminas/laminas-dependency-plugin": true,
+            "captainhook/plugin-composer": true
+        }
+    }
+}

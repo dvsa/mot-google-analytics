@@ -3,7 +3,7 @@
     "description": "A Laminas module for easy integration of Google Analytics and Google Tag Manager",
     "license": "proprietary",
     "require": {
-        "php": "^8.0",
+        "php": "^8.1",
         "laminas/laminas-modulemanager": "^2.8.2",
         "laminas/laminas-i18n": "^2.9.0",
         "laminas/laminas-log": "^2.10.0",

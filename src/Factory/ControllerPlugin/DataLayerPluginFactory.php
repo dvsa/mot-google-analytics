@@ -16,7 +16,7 @@ class DataLayerPluginFactory extends AbstractPlugin implements FactoryInterface
 {
     /**
      * @param ContainerInterface $container
-     * @param $requestedName
+     * @param string $requestedName
      * @param array|null $options
      * @return DataLayerPlugin
      */

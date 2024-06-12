@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the DVSA MOT Google-Analytics project.
  */
@@ -11,23 +12,23 @@ use PHPUnit\Framework\TestCase;
 
 class DataLayerViewHelperTest extends TestCase
 {
-    const SIMPLE_TEST_JSON = <<<'EOD'
+    private const SIMPLE_TEST_JSON = <<<'EOD'
 {
     "simple": "test"
 }
 EOD;
 
-    const SIMPLE_TEST_JS = <<<'EOD'
+    private const SIMPLE_TEST_JS = <<<'EOD'
 var dataLayer = [{
     "simple": "test"
 }];
 EOD;
 
-    const SIMPLE_TEST_ARRAY = [
+    private const SIMPLE_TEST_ARRAY = [
         'simple' => 'test'
     ];
 
-    const CUSTOM_SCOPE = 'custom_scope';
+    private const CUSTOM_SCOPE = 'custom_scope';
 
 
     public function testInvoke()
@@ -59,11 +60,12 @@ var dataLayer = [{
 }];
 EOD;
 
-        $viewHelper = $this->createViewHelper([
+        $viewHelper = $this->createViewHelper(
+            [
             'event'   => 'user-login-fail',
             'journey' => 'sign-in',
             'title'   => 'Sign in - your sign in attempt has failed',
-        ],
+            ],
             DataLayer::DATA_LAYER_SCOPE_DEFAULT
         );
 

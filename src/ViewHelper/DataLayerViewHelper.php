@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the DVSA MOT Google-Analytics project.
  */
@@ -33,7 +34,7 @@ class DataLayerViewHelper extends AbstractHelper
      */
     public function __invoke(array $variables = [], string $scope = DataLayer::DATA_LAYER_SCOPE_DEFAULT)
     {
-        if(empty($variables)) {
+        if (empty($variables)) {
             return $this;
         }
 
@@ -56,10 +57,11 @@ class DataLayerViewHelper extends AbstractHelper
      * @param string $scope
      * @return string
      */
-    public function renderJson(string $scope = DataLayer::DATA_LAYER_SCOPE_DEFAULT): string {
+    public function renderJson(string $scope = DataLayer::DATA_LAYER_SCOPE_DEFAULT): string
+    {
         $data = $this->dataLayer->getAll($scope);
 
-        if(empty($data)) {
+        if (empty($data)) {
             return '';
         }
 

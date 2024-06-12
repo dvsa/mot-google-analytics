@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the DVSA MOT Google-Analytics project.
  */
@@ -15,7 +16,7 @@ use Laminas\Mvc\Controller\Plugin\AbstractPlugin;
  */
 class DataLayer extends AbstractPlugin
 {
-    const DATA_LAYER_SCOPE_DEFAULT = "default";
+    public const DATA_LAYER_SCOPE_DEFAULT = "default";
 
     /**
      * Data layer variables.

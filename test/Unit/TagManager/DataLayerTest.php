@@ -11,6 +11,9 @@ use PHPUnit\Framework\TestCase;
 
 class DataLayerTest extends TestCase
 {
+    /**
+     * @return void
+     */
     public function testAddEmpty()
     {
         $dataLayer = new DataLayer();
@@ -19,6 +22,9 @@ class DataLayerTest extends TestCase
         $this->assertEmpty($dataLayer->getAll());
     }
 
+    /**
+     * @return void
+     */
     public function testAddSingleVariable()
     {
         $dataLayer = new DataLayer();
@@ -27,6 +33,9 @@ class DataLayerTest extends TestCase
         $this->assertEquals('user-login-successful', $dataLayer->getAll()['event']);
     }
 
+    /**
+     * @return void
+     */
     public function testAddMultipleVariables()
     {
         $dataLayer = new DataLayer();
@@ -45,6 +54,9 @@ class DataLayerTest extends TestCase
         $this->assertEquals('Test result entry - the defect has been removed', $vars['title']);
     }
 
+    /**
+     * @return void
+     */
     public function testAddMultipleTimes()
     {
         $dataLayer = new DataLayer();
@@ -64,6 +76,9 @@ class DataLayerTest extends TestCase
         ], $vars);
     }
 
+    /**
+     * @return void
+     */
     public function testSort()
     {
         $dataLayer = new DataLayer();
@@ -75,6 +90,9 @@ class DataLayerTest extends TestCase
         }
     }
 
+    /**
+     * @return void
+     */
     public function testVariablesAreOverriddenOnAdd()
     {
         $dataLayer = new DataLayer();
@@ -84,6 +102,9 @@ class DataLayerTest extends TestCase
         $this->assertEquals('user-login-successful', $dataLayer->getAll()['event']);
     }
 
+    /**
+     * @return void
+     */
     public function testClear()
     {
         $dataLayer = new DataLayer();

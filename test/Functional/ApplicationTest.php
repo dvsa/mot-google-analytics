@@ -6,7 +6,7 @@
 
 namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Functional;
 
-use Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Functional\Controller\IndexController;
+use Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Functional\Controller\IndexController;
 use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class ApplicationTest extends AbstractHttpControllerTestCase
@@ -19,6 +19,9 @@ class ApplicationTest extends AbstractHttpControllerTestCase
         parent::setUp();
     }
 
+    /**
+     * @return void
+     */
     public function testIndexAction()
     {
         $this->dispatch('/');
@@ -27,6 +30,7 @@ class ApplicationTest extends AbstractHttpControllerTestCase
         $this->assertControllerName(IndexController::class);
         $this->assertMatchedRouteName('index');
 
+        /** @var string */
         $content = $this->getResponse()->getContent();
         $this->assertStringStartsWith('<!doctype html>', $content);
         $this->assertStringContainsString('var dataLayer = [{', $content);

@@ -5,7 +5,7 @@
  */
 
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\Package;
-use Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Functional\Controller\IndexController;
+use Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Functional\Controller\IndexController;
 
 return [
     'controllers' => [

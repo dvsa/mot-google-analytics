@@ -19,12 +19,13 @@ class DataLayerViewHelperFactory extends AbstractPlugin implements FactoryInterf
 {
     /**
      * @param ContainerInterface $container
-     * @param string $requestedName
+     * @param string|null $requestedName
      * @param array|null $options
-     * @return DataLayerViewHelper|object
+     * @return DataLayerViewHelper
      */
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null): DataLayerViewHelper
     {
+        /** @var DataLayer */
         $dataLayer = $container->get(DataLayer::class);
         return new DataLayerViewHelper($dataLayer);
     }

@@ -4,7 +4,7 @@
  * This file is part of the DVSA MOT Google Analytics project.
  */
 
-namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Functional\Controller;
+namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Functional\Controller;
 
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\Package;
 use Laminas\Mvc\Controller\AbstractActionController;

@@ -31,6 +31,9 @@ EOD;
     private const CUSTOM_SCOPE = 'custom_scope';
 
 
+    /**
+     * @return void
+     */
     public function testInvoke()
     {
         $dataLayer = new DataLayer();
@@ -39,6 +42,9 @@ EOD;
         $this->assertEquals($dataLayerViewHelper, $dataLayerViewHelper());
     }
 
+    /**
+     * @return void
+     */
     public function testRenderWithoutData()
     {
         $js = <<<'EOD'
@@ -50,6 +56,9 @@ EOD;
         $this->assertEquals($js, $viewHelper->render());
     }
 
+    /**
+     * @return void
+     */
     public function testRenderWithData()
     {
         $js = <<<'EOD'
@@ -72,6 +81,9 @@ EOD;
         $this->assertEquals($js, $viewHelper->render());
     }
 
+    /**
+     * @return void
+     */
     public function testRenderForCustomScope()
     {
         $viewHelper = $this->createViewHelper(self::SIMPLE_TEST_ARRAY, self::CUSTOM_SCOPE);
@@ -79,6 +91,9 @@ EOD;
         $this->assertEquals(self::SIMPLE_TEST_JS, $viewHelper->render(self::CUSTOM_SCOPE));
     }
 
+    /**
+     * @return void
+     */
     public function testRenderJson()
     {
         $viewHelper = $this->createViewHelper(self::SIMPLE_TEST_ARRAY, DataLayer::DATA_LAYER_SCOPE_DEFAULT);
@@ -86,6 +101,9 @@ EOD;
         $this->assertEquals(self::SIMPLE_TEST_JSON, $viewHelper->renderJson());
     }
 
+    /**
+     * @return void
+     */
     public function testRenderJsonForCustomScope()
     {
         $viewHelper = $this->createViewHelper(self::SIMPLE_TEST_ARRAY, self::CUSTOM_SCOPE);

@@ -11,6 +11,9 @@ use PHPUnit\Framework\TestCase;
 
 class PackageTest extends TestCase
 {
+    /**
+     * @return void
+     */
     public function testConstantsAreDefined()
     {
         $constants = ['VENDOR', 'NAME', 'FQPN', 'DESCRIPTION', 'VERSION'];

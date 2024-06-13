@@ -14,15 +14,18 @@ use PHPUnit\Framework\MockObject\MockObject as MockObj;
 
 class DataLayerFactoryTest extends TestCase
 {
+    /**
+     * @return void
+     */
     public function testCreateService()
     {
-        /** @var ContainerInterface|MockObj $continaer */
-        $continaer = $this
+        /** @var ContainerInterface&MockObj $container */
+        $container = $this
             ->getMockBuilder(ContainerInterface::class)
             ->getMock();
 
         $dataLayerFactory = new DataLayerFactory();
-        $dataLayerViewHelper = $dataLayerFactory($continaer, null, []);
+        $dataLayerViewHelper = $dataLayerFactory($container, null, []);
         $this->assertInstanceOf(DataLayer::class, $dataLayerViewHelper);
     }
 }

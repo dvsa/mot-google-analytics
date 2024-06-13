@@ -7,6 +7,7 @@
 namespace Dvsa\Mot\Frontend\GoogleAnalyticsModule\ViewHelper;
 
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\TagManager\DataLayer;
+use Error;
 use Laminas\View\Helper\AbstractHelper;
 
 class DataLayerViewHelper extends AbstractHelper
@@ -55,6 +56,7 @@ class DataLayerViewHelper extends AbstractHelper
     /**
      * Used when we only need pure json, e.g. sending push events from JavaScript
      * @param string $scope
+     *
      * @return string
      */
     public function renderJson(string $scope = DataLayer::DATA_LAYER_SCOPE_DEFAULT): string
@@ -65,6 +67,12 @@ class DataLayerViewHelper extends AbstractHelper
             return '';
         }
 
-        return json_encode($data, JSON_PRETTY_PRINT);
+        $encodedData = json_encode($data, JSON_PRETTY_PRINT);
+
+        if ($encodedData !== false) {
+            return $encodedData;
+        }
+
+        throw new Error("Failed to encode data");
     }
 }

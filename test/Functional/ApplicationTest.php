@@ -35,6 +35,7 @@ class ApplicationTest extends AbstractHttpControllerTestCase
         $this->assertControllerName(IndexController::class);
         $this->assertMatchedRouteName('index');
 
+        /** @var string $content */
         $content = $this->getResponse()->getContent();
         $this->assertStringStartsWith('<!doctype html>', $content);
         $this->assertStringContainsString('var dataLayer = [{', $content);

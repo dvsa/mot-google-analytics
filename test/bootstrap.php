@@ -1,10 +1,10 @@
 <?php
 
-use Composer\Autoload\ClassLoader;
-
 /**
  * This file is part of the DVSA MOT Google-Analytics project.
  */
+
+use Composer\Autoload\ClassLoader;
 
 ini_set('error_reporting', E_ALL);
 

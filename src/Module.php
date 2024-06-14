@@ -13,7 +13,7 @@ class Module implements ConfigProviderInterface
     /**
      * Returns configuration to merge with application configuration.
      *
-     * @return array|\Traversable
+     * @return string[][][]
      */
     public function getConfig()
     {

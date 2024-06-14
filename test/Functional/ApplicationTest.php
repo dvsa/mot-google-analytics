@@ -11,6 +11,9 @@ use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class ApplicationTest extends AbstractHttpControllerTestCase
 {
+    /**
+     * @var bool
+     */
     protected $traceError = true;
 
     protected function setUp(): void

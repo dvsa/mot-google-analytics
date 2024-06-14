@@ -56,7 +56,7 @@ class DataLayerViewHelper extends AbstractHelper
     /**
      * Used when we only need pure json, e.g. sending push events from JavaScript
      * @param string $scope
-     * 
+     *
      * @return string
      */
     public function renderJson(string $scope = DataLayer::DATA_LAYER_SCOPE_DEFAULT): string

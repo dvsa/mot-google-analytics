@@ -11,10 +11,12 @@ use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class ApplicationTest extends AbstractHttpControllerTestCase
 {
-    /**
-     * @var bool
-     */
     protected $traceError = true;
+    protected $application;
+    protected $applicationConfig;
+    protected $backupStaticAttributes;
+    protected $runTestInSeparateProcess;
+
 
     protected function setUp(): void
     {
@@ -23,9 +25,9 @@ class ApplicationTest extends AbstractHttpControllerTestCase
     }
 
     /**
-     * @return void
+     * @throws \Exception
      */
-    public function testIndexAction()
+    public function testIndexAction(): void
     {
         $this->dispatch('/');
 
@@ -33,7 +35,6 @@ class ApplicationTest extends AbstractHttpControllerTestCase
         $this->assertControllerName(IndexController::class);
         $this->assertMatchedRouteName('index');
 
-        /** @var string */
         $content = $this->getResponse()->getContent();
         $this->assertStringStartsWith('<!doctype html>', $content);
         $this->assertStringContainsString('var dataLayer = [{', $content);

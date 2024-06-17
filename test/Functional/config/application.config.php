@@ -8,7 +8,8 @@ return [
     'modules' => [
         'Dvsa\Mot\Frontend\GoogleAnalyticsModule',
         'Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Functional',
-    'Laminas\Router'
+        'Laminas\Router',
+        'Laminas\I18n'
     ],
     'module_listener_options' => [
         'module_paths' => [

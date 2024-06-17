@@ -10,6 +10,10 @@ return [
     'view_helpers' => [
         'factories' => [
             'gtmDataLayer' => DataLayerViewHelperFactory::class,
+            Laminas\I18n\View\Helper\Translate::class => Laminas\ServiceManager\Factory\InvokableFactory::class
+        ],
+        'aliases' => [
+            'translate' => Laminas\I18n\View\Helper\Translate::class,
         ],
     ],
 ];

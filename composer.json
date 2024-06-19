@@ -33,7 +33,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dvsa\\Mot\\Frontend\\GoogleAnalyticsModuletest\\": "test"
+            "Dvsa\\Mot\\Frontend\\GoogleAnalyticsModuleTest\\": "test"
         }
     },
     "scripts": {

@@ -4,7 +4,7 @@
  * This file is part of the DVSA MOT Google Analytics project.
  */
 
-namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Unit\Factory\ViewHelper;
+namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Unit\Factory\ViewHelper;
 
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\TagManager\DataLayer;
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\ViewHelper\DataLayerViewHelper;

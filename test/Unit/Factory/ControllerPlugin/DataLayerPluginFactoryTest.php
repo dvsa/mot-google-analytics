@@ -4,7 +4,7 @@
  * This file is part of the DVSA MOT Google Analytics project.
  */
 
-namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Unit\Factory\ControllerPlugin;
+namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Unit\Factory\ControllerPlugin;
 
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\ControllerPlugin\DataLayerPlugin;
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\Factory\ControllerPlugin\DataLayerPluginFactory;

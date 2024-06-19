@@ -4,7 +4,7 @@
  * This file is part of the DVSA MOT Google-Analytics project.
  */
 
-namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Unit\TagManager;
+namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Unit\TagManager;
 
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\TagManager\DataLayer;
 use PHPUnit\Framework\TestCase;

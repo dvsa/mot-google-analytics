@@ -4,7 +4,7 @@
  * This file is part of the DVSA MOT Google Analytics project.
  */
 
-namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Functional;
+namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Functional;
 
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 

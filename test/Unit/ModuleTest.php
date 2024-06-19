@@ -4,7 +4,7 @@
  * This file is part of the DVSA MOT Google-Analytics project.
  */
 
-namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Unit;
+namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Unit;
 
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\Module;
 use PHPUnit\Framework\TestCase;

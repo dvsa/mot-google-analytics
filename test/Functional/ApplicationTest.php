@@ -4,9 +4,9 @@
  * This file is part of the DVSA MOT Google Analytics project.
  */
 
-namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Functional;
+namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Functional;
 
-use Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Functional\Controller\IndexController;
+use Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Functional\Controller\IndexController;
 use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class ApplicationTest extends AbstractHttpControllerTestCase

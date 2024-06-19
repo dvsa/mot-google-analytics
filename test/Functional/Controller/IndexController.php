@@ -21,8 +21,4 @@ class IndexController extends AbstractActionController
 
         return $view;
     }
-
-    private function gtmDataLayer(array $options): void
-    {
-    }
 }

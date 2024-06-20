@@ -14,10 +14,7 @@ use PHPUnit\Framework\MockObject\MockObject as MockObj;
 
 class DataLayerFactoryTest extends TestCase
 {
-    /**
-     * @return void
-     */
-    public function testCreateService()
+    public function testCreateService(): void
     {
         /** @var ContainerInterface&MockObj $container */
         $container = $this

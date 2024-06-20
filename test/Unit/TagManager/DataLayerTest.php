@@ -11,10 +11,7 @@ use PHPUnit\Framework\TestCase;
 
 class DataLayerTest extends TestCase
 {
-    /**
-     * @return void
-     */
-    public function testAddEmpty()
+    public function testAddEmpty(): void
     {
         $dataLayer = new DataLayer();
         $dataLayer->add([]);
@@ -22,10 +19,7 @@ class DataLayerTest extends TestCase
         $this->assertEmpty($dataLayer->getAll());
     }
 
-    /**
-     * @return void
-     */
-    public function testAddSingleVariable()
+    public function testAddSingleVariable(): void
     {
         $dataLayer = new DataLayer();
         $dataLayer->add(['event' => 'user-login-successful']);
@@ -33,10 +27,7 @@ class DataLayerTest extends TestCase
         $this->assertEquals('user-login-successful', $dataLayer->getAll()['event']);
     }
 
-    /**
-     * @return void
-     */
-    public function testAddMultipleVariables()
+    public function testAddMultipleVariables(): void
     {
         $dataLayer = new DataLayer();
         $dataLayer->add([
@@ -54,10 +45,7 @@ class DataLayerTest extends TestCase
         $this->assertEquals('Test result entry - the defect has been removed', $vars['title']);
     }
 
-    /**
-     * @return void
-     */
-    public function testAddMultipleTimes()
+    public function testAddMultipleTimes(): void
     {
         $dataLayer = new DataLayer();
         $dataLayer->add([
@@ -76,10 +64,7 @@ class DataLayerTest extends TestCase
         ], $vars);
     }
 
-    /**
-     * @return void
-     */
-    public function testSort()
+    public function testSort(): void
     {
         $dataLayer = new DataLayer();
         $dataLayer->add(['x' => 'X', 'a' => 'A', 'z' => 'Z', 'b' => 'B']);
@@ -90,10 +75,7 @@ class DataLayerTest extends TestCase
         }
     }
 
-    /**
-     * @return void
-     */
-    public function testVariablesAreOverriddenOnAdd()
+    public function testVariablesAreOverriddenOnAdd(): void
     {
         $dataLayer = new DataLayer();
         $dataLayer->add(['event' => 'user-login-fail']);
@@ -102,10 +84,7 @@ class DataLayerTest extends TestCase
         $this->assertEquals('user-login-successful', $dataLayer->getAll()['event']);
     }
 
-    /**
-     * @return void
-     */
-    public function testClear()
+    public function testClear(): void
     {
         $dataLayer = new DataLayer();
         $dataLayer->add(['1' => 1, '2' => 2, '3' => 3, '4' => 4]);

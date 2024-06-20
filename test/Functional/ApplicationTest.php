@@ -22,10 +22,7 @@ class ApplicationTest extends AbstractHttpControllerTestCase
         parent::setUp();
     }
 
-    /**
-     * @return void
-     */
-    public function testIndexAction()
+    public function testIndexAction(): void
     {
         $this->dispatch('/');
 

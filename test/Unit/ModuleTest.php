@@ -15,7 +15,6 @@ class ModuleTest extends TestCase
     {
         $module = new Module();
         $config = $module->getConfig();
-        // $this->assertIsArray($config);
         $this->assertSame($config, unserialize(serialize($config)));
     }
 }

@@ -26,6 +26,9 @@
                 "action": "composer phpcs"
             },
             {
+                "action": "composer phpstan"
+            },
+            {
                 "action": "composer psalm"
             }
         ]

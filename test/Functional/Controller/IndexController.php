@@ -17,6 +17,7 @@ class IndexController extends AbstractActionController
         $view = new ViewModel([]);
         $view->setTemplate(Package::FQPN . '/test/index');
 
+        /** @var callable */
         $gtmDataLayer = $this->plugin('gtmDataLayer');
 
         $gtmDataLayer(['controller' => __CLASS__]);

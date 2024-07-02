@@ -3,6 +3,7 @@
     "description": "A Laminas module for easy integration of Google Analytics and Google Tag Manager",
     "license": "proprietary",
     "require": {
+        "php": "^8.2",
         "laminas/laminas-modulemanager": "^2.8.2",
         "laminas/laminas-i18n": "^2.9.0",
         "laminas/laminas-log": "^2.10.0",
@@ -10,8 +11,7 @@
         "laminas/laminas-serializer": "^2.9.0",
         "laminas/laminas-servicemanager": "^3.10",
         "laminas/laminas-view": "^2.10.0",
-        "laminas/laminas-dependency-plugin": "^2",
-        "php": "^8.1"
+        "laminas/laminas-dependency-plugin": "^2.6.0"
     },
     "require-dev": {
         "captainhook/captainhook": "^5.16",

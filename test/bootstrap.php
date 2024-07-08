@@ -1,7 +1,10 @@
 <?php
+
 /**
  * This file is part of the DVSA MOT Google-Analytics project.
  */
+
+use Composer\Autoload\ClassLoader;
 
 ini_set('error_reporting', E_ALL);
 
@@ -13,8 +16,10 @@ foreach ($files as $file) {
         continue;
     }
 
+    /** @var ClassLoader */
     $loader = require $file;
 }
+
 if (!$loader) {
     throw new RuntimeException('vendor/autoload.php could not be found. Did you run `php composer.phar install`?');
 }

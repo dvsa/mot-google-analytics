@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the DVSA MOT Google-Analytics project.
  */
@@ -12,7 +13,7 @@ class Module implements ConfigProviderInterface
     /**
      * Returns configuration to merge with application configuration.
      *
-     * @return array|\Traversable
+     * @return string[][][]
      */
     public function getConfig()
     {

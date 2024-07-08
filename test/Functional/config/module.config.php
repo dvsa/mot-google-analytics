@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the DVSA MOT Google Analytics project.
  */
@@ -12,7 +13,7 @@ return [
             IndexController::class => IndexController::class,
         ],
     ],
-        'view_manager' => [
+    'view_manager' => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
         'doctype'                  => 'HTML5',

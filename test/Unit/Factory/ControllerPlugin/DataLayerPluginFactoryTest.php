@@ -1,9 +1,10 @@
 <?php
+
 /**
  * This file is part of the DVSA MOT Google Analytics project.
  */
 
-namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuletest\Unit\Factory\ControllerPlugin;
+namespace Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Unit\Factory\ControllerPlugin;
 
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\ControllerPlugin\DataLayerPlugin;
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\Factory\ControllerPlugin\DataLayerPluginFactory;
@@ -14,9 +15,9 @@ use PHPUnit\Framework\MockObject\MockObject as MockObj;
 
 class DataLayerPluginFactoryTest extends TestCase
 {
-    public function testCreateService()
+    public function testCreateService(): void
     {
-        /** @var ContainerInterface|MockObj $container */
+        /** @var ContainerInterface&MockObj $container */
         $container = $this
             ->getMockBuilder(ContainerInterface::class)
             ->getMock();

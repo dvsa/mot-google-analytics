@@ -3,7 +3,7 @@
     "description": "A Laminas module for easy integration of Google Analytics and Google Tag Manager",
     "license": "proprietary",
     "require": {
-        "php": "^8.0",
+        "php": "^8.2",
         "laminas/laminas-modulemanager": "^2.8.2",
         "laminas/laminas-i18n": "^2.9.0",
         "laminas/laminas-log": "^2.10.0",
@@ -11,14 +11,18 @@
         "laminas/laminas-serializer": "^2.9.0",
         "laminas/laminas-servicemanager": "^3.10",
         "laminas/laminas-view": "^2.10.0",
-        "laminas/laminas-dependency-plugin": "^2"
+        "laminas/laminas-dependency-plugin": "^2.6.0"
     },
     "require-dev": {
         "captainhook/captainhook": "^5.16",
         "captainhook/plugin-composer": "^5.3",
         "friendsofphp/php-cs-fixer": "^3.1",
         "laminas/laminas-test": "^4.0",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.10",
+        "vimeo/psalm": "^5.13",
+        "dvsa/coding-standards": "^2.0",
+        "phpstan/phpstan": "^1.11"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -34,7 +38,11 @@
     },
     "scripts": {
         "test": "phpunit",
-        "test-coverage": "phpunit --coverage-clover build/code-coverage/clover/clover.xml --coverage-html build/code-coverage/html/"
+        "test-coverage": "phpunit --coverage-clover build/code-coverage/clover/clover.xml --coverage-html build/code-coverage/html/",
+        "phpcs": "./vendor/bin/phpcs .",
+        "phpcs-fix": "./vendor/bin/phpcbf .",
+        "psalm": "./vendor/bin/psalm",
+        "phpstan": "vendor/bin/phpstan analyse"
     },
     "config": {
         "allow-plugins": {

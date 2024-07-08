@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the DVSA MOT Google-Analytics project.
  */
@@ -14,11 +15,11 @@ class DataLayerFactory extends AbstractPlugin implements FactoryInterface
 {
     /**
      * @param ContainerInterface $container
-     * @param string $requestedName
+     * @param string|null $requestedName
      * @param array|null $options
-     * @return DataLayer|object
+     * @return DataLayer
      */
-    public function __invoke(ContainerInterface $container, $requestedName, array $options=null): DataLayer
+    public function __invoke(ContainerInterface $container, $requestedName, array $options = null): DataLayer
     {
             return new DataLayer();
     }

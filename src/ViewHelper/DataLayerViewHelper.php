@@ -8,9 +8,8 @@ namespace Dvsa\Mot\Frontend\GoogleAnalyticsModule\ViewHelper;
 
 use Dvsa\Mot\Frontend\GoogleAnalyticsModule\TagManager\DataLayer;
 use Error;
-use Laminas\View\Helper\AbstractHelper;
 
-class DataLayerViewHelper extends AbstractHelper
+class DataLayerViewHelper
 {
     /**
      * @var DataLayer

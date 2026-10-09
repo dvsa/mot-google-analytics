@@ -6,6 +6,7 @@
 
 return [
     'modules' => [
+        'DvsaLogger',
         'Dvsa\Mot\Frontend\GoogleAnalyticsModule',
         'Dvsa\Mot\Frontend\GoogleAnalyticsModuleTest\Functional',
         'Laminas\Router',
@@ -15,6 +16,9 @@ return [
         'module_paths' => [
             __DIR__ . '/../../../src/',
             __DIR__ . '/../../../test/Functional',
+        ],
+        'config_glob_paths' => [
+            __DIR__ . '/../../../config/autoload/{,*.}{global,local}.php',
         ],
     ],
 ];

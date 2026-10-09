@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "718a59c4a1970fc71ea9ba6e61fa3f1e",
+    "content-hash": "2f5201d27f20f0def7618b536386d456",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -211,16 +211,16 @@
         },
         {
             "name": "dvsa/mot-logger",
-            "version": "v3.3.0",
+            "version": "v3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dvsa/mot-logger.git",
-                "reference": "c028a81ac6722c5e78871655ccadb160b375c17a"
+                "reference": "e19a4b5f52c00472ffe6c9c54bf6e483705b7b74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dvsa/mot-logger/zipball/c028a81ac6722c5e78871655ccadb160b375c17a",
-                "reference": "c028a81ac6722c5e78871655ccadb160b375c17a",
+                "url": "https://api.github.com/repos/dvsa/mot-logger/zipball/e19a4b5f52c00472ffe6c9c54bf6e483705b7b74",
+                "reference": "e19a4b5f52c00472ffe6c9c54bf6e483705b7b74",
                 "shasum": ""
             },
             "require": {
@@ -236,10 +236,10 @@
             "require-dev": {
                 "captainhook/captainhook": "^5.16",
                 "captainhook/plugin-composer": "^5.3",
-                "dvsa/coding-standards": "^2.0",
+                "dvsa/coding-standards": "^2.1",
                 "phpstan/phpstan": "^1.11",
                 "phpunit/phpunit": "^9.6",
-                "squizlabs/php_codesniffer": "^3.10",
+                "squizlabs/php_codesniffer": "^4.0.2.0",
                 "vimeo/psalm": "^5.24"
             },
             "type": "library",
@@ -264,9 +264,9 @@
             ],
             "support": {
                 "issues": "https://github.com/dvsa/mot-logger/issues",
-                "source": "https://github.com/dvsa/mot-logger/tree/v3.3.0"
+                "source": "https://github.com/dvsa/mot-logger/tree/v3.3.1"
             },
-            "time": "2026-04-14T10:03:49+00:00"
+            "time": "2026-10-09T10:04:49+00:00"
         },
         {
             "name": "laminas/laminas-config",
@@ -2644,21 +2644,21 @@
         },
         {
             "name": "dvsa/coding-standards",
-            "version": "v2.0.0",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dvsa/php-coding-standards.git",
-                "reference": "22da6f5cbed2a3ba619d1552727a908fbf0f2098"
+                "reference": "f3d8b09db1fc7e91988bc32eb67830a88df0bd95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dvsa/php-coding-standards/zipball/22da6f5cbed2a3ba619d1552727a908fbf0f2098",
-                "reference": "22da6f5cbed2a3ba619d1552727a908fbf0f2098",
+                "url": "https://api.github.com/repos/dvsa/php-coding-standards/zipball/f3d8b09db1fc7e91988bc32eb67830a88df0bd95",
+                "reference": "f3d8b09db1fc7e91988bc32eb67830a88df0bd95",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
-                "squizlabs/php_codesniffer": "^3.1"
+                "squizlabs/php_codesniffer": "^3.1 || ^4.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0"
@@ -2693,9 +2693,9 @@
             "description": "Coding Standards used for PHP in the Driver and Vehicle Standards Agency. PSR Compliant.",
             "support": {
                 "issues": "https://github.com/dvsa/php-coding-standards/issues",
-                "source": "https://github.com/dvsa/php-coding-standards/tree/v2.0.0"
+                "source": "https://github.com/dvsa/php-coding-standards/tree/v2.1.0"
             },
-            "time": "2022-01-17T15:41:57+00:00"
+            "time": "2026-07-10T09:36:51+00:00"
         },
         {
             "name": "evenement/evenement",
@@ -5870,37 +5870,37 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.10.1",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "8f90f7a53ce271935282967f53d0894f8f1ff877"
+                "reference": "bbdc3d0532623e21838b7041a4364383a8126f96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/8f90f7a53ce271935282967f53d0894f8f1ff877",
-                "reference": "8f90f7a53ce271935282967f53d0894f8f1ff877",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/bbdc3d0532623e21838b7041a4364383a8126f96",
+                "reference": "bbdc3d0532623e21838b7041a4364383a8126f96",
                 "shasum": ""
             },
             "require": {
+                "ext-libxml": "*",
                 "ext-simplexml": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
-                "php": ">=5.4.0"
+                "php": ">=7.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.3.4"
+                "phpunit/phpunit": "^8.4.0 || ^9.3.4 || ^10.5.32 || 11.3.3 - 11.5.28 || ^11.5.31"
+            },
+            "suggest": {
+                "ext-iconv": "For accurate character length calculation when the checked files contain multi-byte characters.",
+                "ext-pcntl": "For parallel processing support via the --parallel CLI option."
             },
             "bin": [
                 "bin/phpcbf",
                 "bin/phpcs"
             ],
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -5919,7 +5919,7 @@
                     "homepage": "https://github.com/PHPCSStandards/PHP_CodeSniffer/graphs/contributors"
                 }
             ],
-            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "description": "PHP_CodeSniffer tokenizes PHP files and detects violations of a defined set of coding standards.",
             "homepage": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
             "keywords": [
                 "phpcs",
@@ -5944,9 +5944,13 @@
                 {
                     "url": "https://opencollective.com/php_codesniffer",
                     "type": "open_collective"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/phpcsstandards",
+                    "type": "thanks_dev"
                 }
             ],
-            "time": "2024-05-22T21:24:41+00:00"
+            "time": "2026-08-06T02:45:27+00:00"
         },
         {
             "name": "symfony/console",
@@ -7581,12 +7585,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
